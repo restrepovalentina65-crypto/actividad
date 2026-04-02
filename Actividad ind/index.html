@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad ind</title>
+    <link rel="stylesheet" href="css/stilo.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Registro de Cita Fisioterapéutica</h1>
+
+    <form>
+
+        <!-- DATOS DEL PACIENTE -->
+        <section class="card">
+            <h2>Datos del Paciente</h2>
+
+            <div class="grid">
+                <input type="text" placeholder="Nombre completo">
+                <input type="text" placeholder="Documento">
+                <input type="date" placeholder="Fecha de nacimiento">
+                <input type="number" placeholder="Edad">
+                <input type="tel" placeholder="Teléfono">
+                <input type="email" placeholder="Correo">
+                <input type="text" placeholder="Dirección">
+                <input type="text" placeholder="EPS / Seguro">
+            </div>
+        </section>
+
+        <!-- ESTADO DE SALUD -->
+        <section class="card">
+            <h2>Estado de Salud</h2>
+
+            <textarea placeholder="Diagnóstico médico"></textarea>
+            <textarea placeholder="Alergias"></textarea>
+            <textarea placeholder="Enfermedades previas"></textarea>
+            <textarea placeholder="Medicamentos actuales"></textarea>
+
+            <label>Nivel de dolor</label>
+            <input type="range" min="1" max="10">
+        </section>
+
+        <!-- CITAS PREVIAS -->
+        <section class="card">
+            <h2>Citas Previas</h2>
+
+            <div class="grid">
+                <input type="date" placeholder="Última cita">
+                <input type="number" placeholder="Número de sesiones">
+            </div>
+
+            <textarea placeholder="Observaciones anteriores"></textarea>
+        </section>
+
+        <!-- CITA ACTUAL -->
+        <section class="card">
+            <h2>Registro de la Cita</h2>
+
+            <div class="grid">
+                <input type="date">
+                <input type="text" placeholder="Tipo de terapia">
+                <input type="text" placeholder="Zona tratada">
+            </div>
+
+            <textarea placeholder="Actividad realizada"></textarea>
+            <textarea placeholder="Observaciones del fisioterapeuta"></textarea>
+        </section>
+
+        <!-- FORMULA -->
+        <section class="card">
+            <h2>Fórmula y Recomendaciones</h2>
+
+            <textarea placeholder="Ejercicios recomendados"></textarea>
+            <textarea placeholder="Medicamentos formulados"></textarea>
+
+            <label>Próxima cita</label>
+            <input type="date">
+        </section>
+
+        <div class="buttons">
+            <button type="submit">Guardar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

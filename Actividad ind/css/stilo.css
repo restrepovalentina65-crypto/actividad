@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#ffe6f0,#f5e9ff);
+    margin: 0;
+}
+
+/* contenedor principal */
+.container{
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+/* título principal */
+h1{
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* tarjetas */
+.card{
+    background: #ffffffcc;
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.15);
+    border: 2px solid #ffe0f0;
+}
+
+/* títulos de sección */
+h2{
+    color: #ff4da6;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+/* inputs y textareas */
+input, textarea{
+    width: 100%;
+    display: block;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 2px solid #ffd6eb;
+    background: #fff0f7;
+    font-family: 'Poppins';
+}
+
+/* efecto focus bonito */
+input:focus, textarea:focus{
+    outline: none;
+    border-color: #ff66b3;
+    box-shadow: 0px 0px 8px rgba(255,105,180,0.4);
+    background: #ffffff;
+}
+
+/* textarea */
+textarea{
+    height: 90px;
+    resize: none;
+}
+
+/* slider dolor */
+input[type="range"]{
+    background: transparent;
+}
+
+/* botones */
+.buttons{
+    text-align: center;
+    margin-top: 30px;
+}
+
+button{
+    padding: 14px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* botón guardar */
+button[type="submit"]{
+    background: linear-gradient(45deg,#ff4da6,#ff80bf);
+    color: white;
+    box-shadow: 0px 4px 12px rgba(255,105,180,0.4);
+}
+
+button[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+/* botón limpiar */
+button[type="reset"]{
+    background: #f8d7e8;
+    color: #d63384;
+}
+
+button[type="reset"]:hover{
+    background: #ffd6eb;
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media (max-width: 900px){
+    .container{
+        width: 90%;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
